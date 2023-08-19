@@ -14,22 +14,34 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Algofy 360° Task</title>
   </head>
   <body>
-    <header class="container header bg-neutral-100">
-      <div class="header-wrapper">
-        <ul class="primary-navigation flex vertical-align-center" role="list">
-          <li>
-            <a class="text-primary fw-regular" href="#home">Home</a>
-          </li>
-          <li>
-            <a class="text-primary fw-regular" href="#about">About</a>
-          </li>
-          <li>
-            <a class="text-primary fw-regular" href="#contact">Contact</a>
-          </li>
-        </ul>
+    <header class="header bg-neutral-100">
+      <div
+        class="header-wrapper flex vertical-align-center justify-space-between"
+      >
+        <div class="nav-container">
+          <ul class="primary-navigation flex vertical-align-center" role="list">
+            <li>
+              <a class="text-primary fw-regular" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="text-primary fw-regular" href="#about">About</a>
+            </li>
+            <li>
+              <a class="text-primary fw-regular" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
         <div class="logo-container">
           <a href="#">
             <img
@@ -39,7 +51,52 @@
             />
           </a>
         </div>
+        <div class="social-list-container">
+          <ul
+            class="social-list flex vertical-align-center"
+            role="list"
+            aria-label="Social Icons"
+          >
+            <li>
+              <a aria-label="Github" href="https://github.com/cesar-santamaria"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a aria-label="instagram" href="#">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a aria-label="twitter" href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a aria-label="youtube" href="#">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
+    <main>
+      <section class="hero flex vertical-align-center">
+        <div class="container">
+          <h1 class="fs-primary-heading">360° Hydration Drink</h1>
+          <div class="subheading-container">
+            <p class="fs-subheading">
+              Balance performance and flavour: 10% coconut water, caffeine free,
+              800mg of electrolytes and 5 delicious flavours
+            </p>
+          </div>
+          <a href="#about">
+            <button class="button">Learn more</button>
+          </a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
