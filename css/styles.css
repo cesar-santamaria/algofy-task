@@ -1,6 +1,6 @@
 :root {
-  --clr-primary-400: hsl(178, 41%, 25%);
-  --clr-primary-500: hsl(178, 41%, 45%);
+  --clr-primary-300: hsl(178, 41%, 45%);
+  --clr-primary-500: hsl(178, 41%, 25%);
   --clr-primary-700: hsl(178, 41%, 17%);
 
   --clr-neutral-100: hsl(0, 0%, 96%);
@@ -53,22 +53,15 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+  font-family: var(--ff-text);
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+a {
+  text-decoration: none;
 }
-
-/* Make images easier to work with */
-/* img,
-picture {
-  max-width: 100%;
-  display: block;
-} */
 
 /* Inherit fonts for inputs and buttons */
 input,
@@ -76,4 +69,87 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+/* Utility Classes */
+.text-primary {
+  color: var(--clr-primary-700);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+
+.container {
+  max-width: 2000px;
+  padding: 0 2rem;
+  margin-inline: auto;
+  place-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.horizontal-align-center {
+  justify-content: center;
+}
+
+.vertical-align-center {
+  align-items: center;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+/* General Styling */
+
+/* Header Nav */
+.header {
+  background-color: transparent;
+  border-bottom: 1px solid var(--clr-neutral-100) transparent;
+  height: 72px;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.header:hover {
+  background-color: var(--clr-neutral-100);
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 80px;
+}
+
+.logo-container:last-child {
+  margin-right: auto;
+  padding-right: 350px;
+}
+
+.primary-navigation:first-child {
+  margin-right: auto;
+}
+
+.primary-navigation > li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 1.25rem;
+}
+
+.primary-navigation a:hover {
+  color: var(--clr-primary-300);
 }
