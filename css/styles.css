@@ -1,3 +1,32 @@
+:root {
+  --clr-primary-400: hsl(178, 41%, 25%);
+  --clr-primary-500: hsl(178, 41%, 45%);
+  --clr-primary-700: hsl(178, 41%, 17%);
+
+  --clr-neutral-100: hsl(0, 0%, 96%);
+
+  --clr-accent-200: hsl(51, 49%, 92%);
+  --clr-accent-300: hsl(38, 24%, 91%);
+  --clr-accent-400: hsl(180, 28%, 74%);
+
+  --ff-primary: "Be Vietnam Pro", sans-serif;
+
+  --ff-text: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-400: 1.25rem;
+  --fs-500: 1rem;
+  --fs-600: 2rem;
+  --fs-700: 3rem;
+
+  --size-500: 1rem;
+  --size-600: 2rem;
+  --size-700: 3rem;
+  --size-900: 5rem;
+}
+
 /* Box sizing rules */
 *,
 *::before,
