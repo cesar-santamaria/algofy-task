@@ -3,6 +3,16 @@ const biographyContents = document.querySelectorAll(".biography-content");
 const navMenu = document.querySelector(".primary-navigation");
 const mobileIcon = document.querySelector(".mobile-icon");
 const navLinks = document.querySelectorAll(".nav-link");
+const header = document.querySelector(".header");
+
+/* Header scrolling animation */
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 0) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
 
 /* Mobile -menu */
 mobileIcon.addEventListener("click", () => {

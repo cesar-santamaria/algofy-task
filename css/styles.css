@@ -186,7 +186,7 @@ select {
 
 /* Header Nav */
 .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   width: 100%;
@@ -195,6 +195,11 @@ select {
   height: 72px;
   transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  z-index: 20;
+}
+
+.header.scrolled {
+  background-color: var(--clr-neutral-100);
 }
 
 .header:hover {
@@ -296,6 +301,7 @@ select {
   font-weight: 200;
   text-align: justify;
   margin-left: 0.5rem;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .profile-image-container {
