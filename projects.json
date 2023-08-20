@@ -1,0 +1,30 @@
+[
+      {
+      "name": "Hundy-Hues",
+      "description": "Hundy Hues is an innovative e-commerce platform that offers a curated collection of stylish furniture and home decor products.",
+      "image": "images/hundy-hues.png",
+      "github": "https://github.com/cesar-santamaria/hundy-hues",
+      "site": "https://hundy-hues-frontend.onrender.com/"
+    },
+    {
+      "name": "Sendero",
+      "description": "Sendero is a job tracking application. Users can categorize jobs in one single app.",
+      "image": "images/sendero.png",
+      "github": "https://www.github.com/cesar-santamaria/sendero",
+      "site" : "https://sendero-client.onrender.com/"
+    },
+    {
+      "name": "Scheduler",
+      "description": "Interview Scheduler is a single page React application that allows mentors to book and cancel interviews with Lighthouse Labs students.",
+      "image": "images/scheduler.png",
+      "github": "https://www.github.com/cesar-santamaria/scheduler"
+    },
+    {
+      "name": "Portfolio Site",
+      "description": "Personal website to display projects ive completed and working on.",
+      "image": "images/portfolio.png",
+      "github": "https://www.github.com/cesar-santamaria",
+      "site": "https://portfolio-cesar-santamaria.vercel.app/"
+    }
+  ]
+  

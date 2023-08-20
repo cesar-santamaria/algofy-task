@@ -63,7 +63,9 @@ body {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -162,6 +164,9 @@ select {
   flex-direction: row;
 }
 
+.margin-bottom-600 {
+  margin-bottom: 2rem;
+}
 .margin-bottom-900 {
   margin-bottom: 5rem;
 }
@@ -308,6 +313,45 @@ select {
   box-sizing: border-box;
 }
 
+/* Projects */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 3.5rem;
+}
+
+.project-image {
+  border-radius: 20px;
+  height: 180px;
+}
+
+.projects-wrapper {
+  margin: 2rem;
+  text-align: center;
+}
+
+.links-wrapper {
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  margin-bottom: 1rem;
+}
+
+.github-link {
+  color: var(--clr-primary-700);
+}
+
+.project-link {
+  margin-left: 3rem;
+  color: var(--clr-primary-700);
+}
+
+.projects-wrapper a:hover {
+  text-decoration: underline;
+}
+
 /* Contact Form */
 .form-container {
   text-align: center;
@@ -333,7 +377,7 @@ label {
 }
 
 .contact button {
-  width: 80%;
+  width: 20%;
   transition: all 0.3s;
 }
 
@@ -391,6 +435,10 @@ label {
   background-color: var(--clr-primary-500);
 }
 
+.button a {
+  color: var(--clr-neutral-100);
+}
+
 /* Links */
 a {
   transition: 0.7s ease;
@@ -417,6 +465,19 @@ a:hover {
 
   .fs-subheading {
     font-size: var(--fs-400);
+  }
+
+  .project-image {
+    height: 100px;
+  }
+
+  .project-description {
+    font-size: var(--fs-400);
+  }
+
+  .projects-wrapper {
+    margin: 0;
+    text-align: center;
   }
 }
 
@@ -501,5 +562,15 @@ a:hover {
 
   .biography-container {
     max-width: 300px;
+  }
+  /* Projects */
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-wrapper {
+    width: auto;
+    margin-bottom: 3rem;
   }
 }
