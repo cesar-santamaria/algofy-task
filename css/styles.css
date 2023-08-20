@@ -150,6 +150,10 @@ select {
   flex-direction: row;
 }
 
+.margin-bottom-900 {
+  margin-bottom: 5rem;
+}
+
 .padding-block-900 {
   padding-block: var(--size-900);
 }
@@ -193,12 +197,14 @@ select {
 }
 
 .primary-navigation > li {
+  cursor: pointer;
   padding: 0 1.25rem;
 }
 
 .social-list > li {
   padding: 0 1.25rem;
   color: var(--clr-primary-700);
+  cursor: pointer;
 }
 
 .social-list a {
@@ -220,6 +226,19 @@ select {
 
 .subheading-container {
   width: 70%;
+}
+
+/* Carousel */
+.carousel {
+  text-align: center;
+}
+
+.carousel img {
+  width: 200px;
+}
+
+.splide__arrows > button {
+  background-color: var(--clr-primary-700); /* Change to your desired color */
 }
 
 /* About */
@@ -244,6 +263,7 @@ select {
 .biography-items li {
   margin-bottom: var(--size-500);
   color: var(--clr-primary-700);
+  cursor: pointer;
 }
 
 .biography-items p {

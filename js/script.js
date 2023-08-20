@@ -8,3 +8,19 @@ for (let i = 0; i < biographyHeaders.length; i++) {
       biographyContents[i].style.display == "block" ? "none" : "block";
   });
 }
+
+/* Carousel */
+document.addEventListener("DOMContentLoaded", function () {
+  let splide = new Splide(".splide", {
+    type: "loop",
+    perPage: 4,
+    breakpoints: {
+      768: {
+        perPage: 1,
+      },
+    },
+    focus: "center",
+  });
+
+  splide.mount();
+});
