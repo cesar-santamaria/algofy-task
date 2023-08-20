@@ -32,6 +32,9 @@
       src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
     ></script>
 
+    <!-- Liquid CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/liquidjs/dist/liquid.browser.umd.js"></script>
+
     <title>Algofy 360° Task</title>
   </head>
   <body>
@@ -230,6 +233,26 @@
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section class="projects container padding-block-900">
+        <div id="project-container">
+          <h1>PROJECTS:</h1>
+          <script type="text/template">
+            {% for project in projects %}
+              <div>
+                <h2>{{ project.name }}</h2>
+                <p>{{ project.description }}</p>
+                <img src="{{ project.image }}" alt="" srcset="">
+                <button>
+                  <a href="{{ project.github }}">
+                    Github
+                  </a>
+                </button>
+              </div>
+            {% endfor %}
+          </script>
         </div>
       </section>
 

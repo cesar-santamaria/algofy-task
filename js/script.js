@@ -48,3 +48,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   splide.mount();
 });
+
+/* Render Projects from .json */
+async function fetchData() {
+  try {
+    const response = await fetch("projects.json");
+    const projectsData = await response.json();
+    return projectsData;
+  } catch (error) {
+    console.error("Error fetching JSON:", error);
+  }
+}
+
+async function renderProjects() {
+  const projectsData = await fetchData();
+  console.log("PROJECTS DATA: ", projectsData);
+  const container = document.getElementById("project-container");
+  const engine = new liquidjs.Liquid();
+
+  const template = document.querySelector('[type="text/template"]');
+  const rendered = engine.parseAndRenderSync(template.innerHTML, {
+    projects: projectsData,
+  });
+  container.innerHTML = rendered;
+}
+
+renderProjects();
