@@ -309,7 +309,6 @@ select {
 }
 
 /* Contact Form */
-
 .form-container {
   text-align: center;
 }
@@ -336,6 +335,44 @@ label {
 .contact button {
   width: 80%;
   transition: all 0.3s;
+}
+
+/* Footer */
+.footer-nav {
+  padding: 2%;
+}
+
+.footer-nav a {
+  color: var(--clr-primary-700);
+  text-decoration: none;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+  color: var(--clr-primary-500);
+  text-decoration: none;
+}
+
+.footer-social-wrapper {
+  flex-direction: column;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: var(--size-400);
+  color: var(--clr-primary-700);
+  fill: var(--clr-primary-700);
+}
+
+.footer-social-list a {
+  text-decoration: none;
+  color: inherit;
+  font-size: var(--size-500);
+}
+
+.footer-social-list a:hover,
+.footer-social-list a:focus {
+  color: var(--clr-primary-400);
 }
 
 /* Buttons */
