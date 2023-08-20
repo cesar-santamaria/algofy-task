@@ -177,8 +177,11 @@ select {
 /* General Styling */
 /* Mobile Menu */
 .mobile-menu {
-  /* position: absolute; */
   display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  padding-right: 2rem;
 }
 
 /* Header Nav */
@@ -347,17 +350,43 @@ a:hover {
 /* Tablet Media Queries */
 @media (max-width: 768px) {
   /* Mobile: Header */
-  .header-wrapper {
-    justify-content: space-around;
-    align-items: center;
+  .header {
+    background-color: var(--clr-neutral-100);
+    position: fixed;
+    z-index: 20;
+  }
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .primary-navigation {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    background: var(--clr-neutral-100);
+    width: 100%;
+    display: inline;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .primary-navigation li {
+    margin: 20px 0;
+  }
+
+  .primary-navigation.active {
+    left: 0;
   }
 
   .logo {
     height: 4rem;
-  }
-
-  .primary-navigation {
-    display: none;
   }
 
   .social-list > li {

@@ -1,5 +1,19 @@
-const biographyHeaders = document.getElementsByClassName("biography-header");
-const biographyContents = document.getElementsByClassName("biography-content");
+const biographyHeaders = document.querySelectorAll(".biography-header");
+const biographyContents = document.querySelectorAll(".biography-content");
+const navMenu = document.querySelector(".primary-navigation");
+const mobileIcon = document.querySelector(".mobile-icon");
+const navLinks = document.querySelectorAll(".nav-link");
+
+/* Mobile -menu */
+mobileIcon.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
+navLinks.forEach((link) =>
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+  })
+);
 
 /* Collapsable paragraph */
 for (let i = 0; i < biographyHeaders.length; i++) {
