@@ -387,8 +387,9 @@ select {
   transition: 0.5s;
 }
 
-.input-wrapper input:valid ~ span,
 .input-wrapper textarea:valid ~ span,
+.input-wrapper textarea:focus ~ span,
+.input-wrapper input:valid ~ span,
 .input-wrapper input:focus ~ span {
   color: var(--clr-primary-700);
   transform: translateX(10px) translateY(-7px);
