@@ -1,5 +1,5 @@
 # Algofy Task
-A responsive web page I completed as a task assignment for Algofy, a 360° Performance Marketing Agency. I wanted to incorporate Algofy somehow in my design and decided on a fictional Algofy 360° Hydration Drink.
+A responsive web page as a task assignment for Algofy, a 360° Performance Marketing Agency. I wanted to incorporate Algofy somehow in my design and decided on a fictional Algofy 360° Hydration Drink.
 
 **Link to project:** https://algofy-task-six.vercel.app/
 
